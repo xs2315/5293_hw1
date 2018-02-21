@@ -31,7 +31,10 @@ This function draw the separate category pixel of source image, and draw a recta
 
 ### Result
 Multi face detecting is not implemented now.
-
+.![](part_0.jpg)
+.![](part_1.jpg)
+.![](part_2.jpg)
+.![](part_3.jpg)
 .![](89_48result.jpg)
 
 ### Limitations
