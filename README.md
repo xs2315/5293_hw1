@@ -30,7 +30,6 @@ This function check a box area row by row and col by col, when find a area cover
 This function draw the separate category pixel of source image, and draw a rectangle border for the face.
 
 ### Result
-Multi face detecting is not implemented now.
 .![](part_0.jpg)
 .![](part_1.jpg)
 .![](part_2.jpg)
