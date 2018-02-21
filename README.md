@@ -35,4 +35,4 @@ Multi face detecting is not implemented now.
 .![](89_48result.jpg)
 
 ### Limitations
-Currently my script can only detect one face by the area coverage check, because the way checking face is simple, just check percentage. I think k-means can only help separating image parts (and I need to adjust n manually for better effect), but human face detecting is particular domain, we may need face model to help improving the result.
+It can be noticed that some hair on the left side show up in the output, because these hair have similar color with skin. And further regularization processing must be applied to filter removing these hair. Currently my script can only detect one face by the area coverage check, because the way checking face is simple, just check percentage. I think k-means can only help separating image parts (and I need to adjust n manually for better effect), but human face detecting is particular domain, we may need face model to help improving the result. 
