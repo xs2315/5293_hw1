@@ -1,10 +1,9 @@
 # 5293_hw1
 ### Work Flow
-1. Read image data and
-2. Turn rgb color information to L*a*b* color space in one-dimensional array. For the  L*a*b* color space, L* represents luminance, a*  represents the color opponent green–red and b*  represents the color opponent blue–yellow.
-2. Use k-means algorithm to classify color to different category.
-3. Separate different category color, turn into True/False matrix for next step.
-4. Check coverage from top left to right bottom, if coverage in scope, then set position as target area.
+1. Use read_img function to read image data and turn rgb color space to L*a*b* color space in one-dimensional array. For the  L*a*b* color space, L* represents luminance, a*  represents the color opponent green–red and b*  represents the color opponent blue–yellow.
+3. Use k-means algorithm to classify color to different category.
+4. Separate different category color, turn into True/False matrix for next step.
+5. Check coverage from top left to right bottom, if coverage in scope, then set position as target area and output face segmentation result with bounding box surrounding  the target area.
 
 ### Variables explain
 | variables | meaning |
@@ -19,13 +18,13 @@
 ### Function explain
 
 ##### rgb2lab
-This function turn rgb tuples to lab tuples, reference https://stackoverflow.com/questions/13405956/convert-an-image-rgb-lab-with-python.
+This function turn rgb tuples to L*a*b* tuples, reference https://stackoverflow.com/questions/13405956/convert-an-image-rgb-lab-with-python.
     
 ##### read_img
 This function read image data, use rgb2lab to get lab info of every pixel, and return array, and row number and col number of image pixel matrix.
 
 ##### check_face
-This function check a box area row by row and col by col, when find a area coverage in target scope, then mark as face area.
+This function check a box area row by row and column by column, when find a area coverage in target scope, then mark as face area.
 
 ##### generate_result
 This function draw the separate category pixel of source image, and draw a rectangle border for the face.
