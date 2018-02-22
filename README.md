@@ -1,7 +1,7 @@
 # 5293_hw1
 ### Work Flow
 1. Read image data and
-2  Turn rgb color information to L*a*b* color space in one-dimensional array. For the  L*a*b* color space, L* represents luminance, a*  represents the color opponent green–red and b*  represents the color opponent blue–yellow.
+2. Turn rgb color information to L*a*b* color space in one-dimensional array. For the  L*a*b* color space, L* represents luminance, a*  represents the color opponent green–red and b*  represents the color opponent blue–yellow.
 2. Use k-means algorithm to classify color to different category.
 3. Separate different category color, turn into True/False matrix for next step.
 4. Check coverage from top left to right bottom, if coverage in scope, then set position as target area.
