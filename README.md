@@ -1,7 +1,8 @@
 # 5293_hw1
 ### Work Flow
-1. Read image data and turn color info to lab in one-dimensional array.
-2. Use k-means algorithm to classify color to  different category.
+1. Read image data and
+2  Turn rgb color information to L*a*b* color space in one-dimensional array. For the  L*a*b* color space, L* represents luminance, a*  represents the color opponent green–red and b*  represents the color opponent blue–yellow.
+2. Use k-means algorithm to classify color to different category.
 3. Separate different category color, turn into True/False matrix for next step.
 4. Check coverage from top left to right bottom, if coverage in scope, then set position as target area.
 
@@ -24,16 +25,14 @@ This function turn rgb tuples to lab tuples, reference https://stackoverflow.com
 This function read image data, use rgb2lab to get lab info of every pixel, and return array, and row number and col number of image pixel matrix.
 
 ##### check_face
-This function check a box area row by row and col by col, when find a area coverage in targer scope, then mark as face area.
+This function check a box area row by row and col by col, when find a area coverage in target scope, then mark as face area.
 
 ##### generate_result
 This function draw the separate category pixel of source image, and draw a rectangle border for the face.
 
 ### Result
-.![](part_0.jpg)
-.![](part_1.jpg)
-.![](part_2.jpg)
-.![](part_3.jpg)
+Multi face detecting is not implemented now.
+
 .![](89_48result.jpg)
 
 ### Limitations
