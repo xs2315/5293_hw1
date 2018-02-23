@@ -14,6 +14,8 @@
 | result | data after k-means calculate | 
 | imgs | different category color matrix | 
 |current_rate | cover percent | 
+|row| number of rows in image data | 
+|col| number of columns in image data | 
 
 ### Function explain
 
@@ -29,7 +31,7 @@ This function check a box area row by row and column by column, when find a area
 ##### generate_result
 This function draw the separate category pixel of source image, and draw a rectangle border for the face.
 
-##### Kmeans
+##### KMeans
 This function do k-means algorithm:
 Random choose k point as centers, then assign each sample to the closest center and calculate new centers. And Iterate the process until get an stable value. 
 
