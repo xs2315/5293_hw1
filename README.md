@@ -14,6 +14,8 @@
 | result | data after k-means calculate | 
 | imgs | different category color matrix | 
 | current_rate | cover percent | 
+| new_centers | new center points|
+| old_centers | old center points |
 | row | number of rows in image data | 
 | col | number of columns in image data | 
 
@@ -21,19 +23,34 @@
 
 ##### rgb2lab
 This function turn rgb tuples to L*a*b* tuples, reference https://stackoverflow.com/questions/13405956/convert-an-image-rgb-lab-with-python.
+
+input: rgb tuple
+output: lab tuple
     
 ##### read_img
 This function read image data, use rgb2lab to get lab info of every pixel, and return array, and row number and col number of image pixel matrix.
 
+input: image file
+output: pixel matrix
+
 ##### check_face
 This function check a box area row by row and column by column, when find a area coverage in target scope, then mark as face area.
+
+input: pixel matrix
+output: face area left top point
 
 ##### generate_result
 This function draw the separate category pixel of source image, and draw a rectangle border for the face.
 
-##### KMeans
+input: face area left top point
+output: result file
+
+##### kmeans
 This function do k-means algorithm:
 Random choose k point as centers, then assign each sample to the closest center and calculate new centers. And Iterate the process until get an stable value. 
+
+input: array data
+output: label data
 
 ### Result
 Multi face detecting is not implemented now.
