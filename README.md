@@ -13,9 +13,9 @@
 | img_data | lab color info in one-dimensional array |
 | result | data after k-means calculate | 
 | imgs | different category color matrix | 
-|current_rate | cover percent | 
-|row| number of rows in image data | 
-|col| number of columns in image data | 
+| current_rate | cover percent | 
+| row | number of rows in image data | 
+| col | number of columns in image data | 
 
 ### Function explain
 
