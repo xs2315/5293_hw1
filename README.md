@@ -1,4 +1,7 @@
 # 5293_hw1
+###
+I uploaded two versions of my script, one is using built-in KMeans function, the other one is using kmeans function that I wrote.
+
 ### Work Flow
 1. Read image data and turn rgb color space to L*a*b* color space in one-dimensional array. For the  L*a*b* color space, L* represents luminance, a*  represents the color opponent green-red and b*  represents the color opponent blue-yellow.
 3. Use k-means algorithm to classify color to different category.
