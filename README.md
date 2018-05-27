@@ -1,4 +1,4 @@
-# 5293_hw1
+# image_segmentation 
 ###
 I uploaded two versions of my script, one is using built-in KMeans function, the other one is using kmeans function that I wrote.
 
